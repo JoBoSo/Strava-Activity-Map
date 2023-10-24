@@ -1,0 +1,11 @@
+create:
+python -m venv .venv
+
+activate:
+.venv\Scripts\activate
+
+deactivate:
+deactivate
+
+requirements:
+pip freeze > requirements.txt

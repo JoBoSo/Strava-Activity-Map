@@ -2,8 +2,11 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from statistics import mean
+import os
 
-df = pd.read_json('data.json')
+my_dir = os.path.dirname(__file__)
+json_file_path = os.path.join(my_dir, 'data.json')
+df = pd.read_json(json_file_path)
 
 # zoom - can adjust the subtraction factor (10 - 12)
 # lat_num = [float(i) for i in lat]

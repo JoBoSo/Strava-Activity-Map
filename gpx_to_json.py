@@ -55,7 +55,7 @@ for file in os.listdir(path):
         continue
 
 for key in data:
-    data[key] = data[key][::10]
+    data[key] = data[key][::100]
 
 df = pd.DataFrame(data)
 df.to_json('data.json', orient="columns")
