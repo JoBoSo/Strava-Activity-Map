@@ -5,25 +5,11 @@ body {
 }
 
 .MyStyle h1 {
+    font-family: Garamond;
     text-align: center;
     background-color: #036;
     color: white;
     padding: 20px;
     margin: 10px 0 10px 0;
-}
-
-.MyStyle h3 {
-    text-align: center;
-}
-
-.MyStyle .GraphFrame {
-    border: 1px solid black;
-    margin: 10px 0 10px 0;
-    background: white;
-    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.2);
-}
-
-.MyStyle .Dropdown {
-    width: 250px;
-    left: calc(50% - 125px);
+    margin-bottom: 1px;
 }
