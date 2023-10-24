@@ -4,12 +4,19 @@ body {
     color: black;
 }
 
-.MyStyle h1 {
+.MyStyle .header {
     font-family: Garamond;
+    font-size: 30pt;
+    font-weight: bold;
     text-align: center;
     background-color: #036;
     color: white;
-    padding: 20px;
-    margin: 10px 0 10px 0;
-    margin-bottom: 1px;
+    padding: 10px;
+    margin: 0 0 1px 0;
+}
+
+.MyStyle .map {
+    display: inline-block;
+    width: 100%;
+    height: 85vh;
 }

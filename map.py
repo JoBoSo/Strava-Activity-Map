@@ -15,7 +15,6 @@ def map():
         lon='lon',
         center=dict(lat=48, lon=-96),
         zoom=3.3,
-        opacity = 0.3,
         color_discrete_sequence=['#00ff8d'],
         hover_name='time',
         hover_data=['activity', 'lat', 'lon', 'elevation']
