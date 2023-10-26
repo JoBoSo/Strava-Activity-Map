@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
 body {
-    font-family: sans-serif;
+    font-family: 'josefin sans', sans-serif;
     background-color: #f1f1f1;
     color: black;
 }
 
 .MyStyle .header {
-    font-family: Garamond;
+    font-family: 'josefin sans';
     font-size: 30pt;
-    font-weight: bold;
     text-align: center;
     background-color: #036;
     color: white;

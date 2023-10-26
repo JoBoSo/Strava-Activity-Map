@@ -15,7 +15,10 @@ def map():
         lon='lon',
         center=dict(lat=48, lon=-96),
         zoom=3.3,
-        color_discrete_sequence=['#00ff8d'],
+        size=len(df.index)*[1],
+        size_max=2.5,
+        color='elevation',
+        color_continuous_scale=[[0, '#00ff8d'],  [0.25, '#ef40ff'], [0.75, '#FF006D'], [1, '#FF0004']],
         hover_name='time',
         hover_data=['activity', 'lat', 'lon', 'elevation']
     )

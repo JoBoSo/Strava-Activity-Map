@@ -1,2 +1,13 @@
-ParseError('no element found: line 1, column 0') occured for file: 1 copy.txt
-ParseError('no element found: line 1, column 0') occured for file: 1.txt
+ParseError('not well-formed (invalid token): line 1, column 0') occured for file: .gitignore
+ParseError('not well-formed (invalid token): line 1, column 0') occured for file: 8328132174.gpx.gz
+ParseError('not well-formed (invalid token): line 1, column 0') occured for file: 8328149192.gpx.gz
+ParseError('not well-formed (invalid token): line 1, column 0') occured for file: 8328172680.gpx.gz
+ParseError('not well-formed (invalid token): line 1, column 0') occured for file: 9071779060.gpx.gz
+ParseError('not well-formed (invalid token): line 1, column 0') occured for file: 9071797665.gpx.gz
+ParseError('not well-formed (invalid token): line 1, column 0') occured for file: 9071807137.gpx.gz
+ParseError('not well-formed (invalid token): line 1, column 0') occured for file: 9071864627.gpx.gz
+ParseError('not well-formed (invalid token): line 1, column 0') occured for file: 9071893564.gpx.gz
+ParseError('not well-formed (invalid token): line 1, column 0') occured for file: 9071919305.gpx.gz
+ParseError('not well-formed (invalid token): line 1, column 0') occured for file: 9071921368.gpx.gz
+ParseError('not well-formed (invalid token): line 1, column 0') occured for file: 9071938726.gpx.gz
+ParseError('not well-formed (invalid token): line 1, column 0') occured for file: 9071944788.gpx.gz

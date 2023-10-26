@@ -1,7 +1,6 @@
 import pandas as pd
 import xml.etree.ElementTree as ET
 import os
-from statistics import mean
 
 open('gpx_to_json_error_log.txt', 'w').close()
 
