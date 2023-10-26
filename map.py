@@ -1,7 +1,6 @@
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-from statistics import mean
 import os
 
 my_dir = os.path.dirname(__file__)
@@ -9,21 +8,44 @@ json_file_path = os.path.join(my_dir, 'data.json')
 df = pd.read_json(json_file_path)
 
 def map():
-    fig = px.scatter_mapbox(
-        df, 
-        lat='lat', 
-        lon='lon',
-        center=dict(lat=48, lon=-96),
-        zoom=3.3,
-        size=len(df.index)*[1],
-        size_max=2.5,
-        color='elevation',
-        color_continuous_scale=[[0, '#00ff8d'],  [0.25, '#ef40ff'], [0.75, '#FF006D'], [1, '#FF0004']],
-        hover_name='time',
-        hover_data=['activity', 'lat', 'lon', 'elevation']
-    )
+    fig = go.Figure(go.Scattermapbox(
+        lat=df['lat'], 
+        lon=df['lon'],
+        marker=go.scattermapbox.Marker(
+            color=df['elevation'],
+            colorscale=[[0, '#00ff8d'],  [0.25, '#ef40ff'], [0.75, '#FF006D'], [1, '#FF0004']],
+            colorbar=dict(
+                title=dict(
+                    text='Elev. (m)',
+                    font=dict(
+                        color='black',
+                        size=12,
+                        family='Arial',
+                    )
+                ),
+                thickness=50,
+                ticklabelposition='inside',
+                tickfont=dict(
+                    color='white',
+                    size=12,
+                    family='Arial',
+                ),
+                xref='container',
+                xpad=1,
+                ypad=3,
+            ),
+            opacity=0.2,
+            size=2.5,
+        )
+        # hover_name='time',
+        # hover_data=['activity', 'lat', 'lon', 'elevation']
+    ))
 
     fig.update_layout(
+        mapbox=dict(
+            center=dict(lat=48, lon=-96),
+            zoom=3.3,
+        ),
         mapbox_style="white-bg",
         mapbox_layers=[
             {
