@@ -34,8 +34,9 @@ def map():
                 xpad=1,
                 ypad=0,
             ),
-            opacity=0.2,
+            opacity=0.3,
             size=2.5,
+            sizemin=2.5,
         )
         # hover_name='time',
         # hover_data=['activity', 'lat', 'lon', 'elevation']
@@ -53,7 +54,7 @@ def map():
                 "sourcetype": "raster",
                 "sourceattribution": "United States Geological Survey",
                 "source": [
-                    "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryOnly/MapServer/tile/{z}/{y}/{x}"
+                    "https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" 
                 ]
             },
             {
