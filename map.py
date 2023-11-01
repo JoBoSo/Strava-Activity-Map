@@ -28,11 +28,11 @@ def map():
                 tickfont=dict(
                     color='white',
                     size=12,
-                    family='Arial',
+                    family='quicksand',
                 ),
                 xref='container',
                 xpad=1,
-                ypad=3,
+                ypad=0,
             ),
             opacity=0.2,
             size=2.5,
@@ -44,7 +44,7 @@ def map():
     fig.update_layout(
         mapbox=dict(
             center=dict(lat=48, lon=-96),
-            zoom=3.3,
+            zoom=2.5,
         ),
         mapbox_style="white-bg",
         mapbox_layers=[

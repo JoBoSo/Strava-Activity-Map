@@ -1,23 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 body {
-    font-family: 'josefin sans', sans-serif;
-    background-color: #f1f1f1;
-    color: black;
+    font-family: sans-serif;
 }
 
-.MyStyle .header {
-    font-family: 'josefin sans';
-    font-size: 30pt;
+.map-container {
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.map-container .header {
+    font-family: 'quicksand';
+    font-size: 18pt;
     text-align: center;
-    background-color: #036;
+    background-color: #02bd94;
     color: white;
-    padding: 10px;
+    padding: 3px;
     margin: 0 0 1px 0;
 }
 
-.MyStyle .map {
+.map-container .map {
     display: inline-block;
     width: 100%;
     height: 85vh;
+    margin-bottom: -5px;
 }

@@ -14,7 +14,7 @@ app.layout = html.Div(
 
     ],
 
-    className='MyStyle'
+    className='map-container'
 )
 
 
