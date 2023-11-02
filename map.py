@@ -18,11 +18,12 @@ def map():
                 title=dict(
                     text='Elev. (m)',
                     font=dict(
-                        color='black',
+                        color='white',
                         size=12,
                         family='Arial',
-                    )
+                    ),
                 ),
+                bgcolor='#02bd94',
                 thickness=50,
                 ticklabelposition='inside',
                 tickfont=dict(
