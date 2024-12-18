@@ -2,3 +2,4 @@
 *.gpx
 *.gz
 /gpx_to_json_error_log.txt
+*.pyc
