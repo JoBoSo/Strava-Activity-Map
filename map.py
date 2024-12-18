@@ -45,8 +45,8 @@ def map():
 
     fig.update_layout(
         mapbox=dict(
-            center=dict(lat=48, lon=-96),
-            zoom=2.5,
+            center=dict(lat=50, lon=-100),
+            zoom=2.9,
         ),
         mapbox_style="white-bg",
         mapbox_layers=[
