@@ -1,11 +1,14 @@
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-import os
+import sqlite3
 
-my_dir = os.path.dirname(__file__)
-json_file_path = os.path.join(my_dir, 'data.json')
-df = pd.read_json(json_file_path)
+conn = sqlite3.connect('database.sqlite3')
+sql_query = "SELECT * FROM strava_gpx_data"
+df = pd.read_sql_query(sql_query, conn)
+conn.close()
+
+df['elevation'] = pd.to_numeric(df['elevation'], errors='coerce')
 
 def map():
     fig = go.Figure(go.Scattermapbox(
