@@ -3,7 +3,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 import sqlite3
 
-conn = sqlite3.connect('database.sqlite3')
+# conn = sqlite3.connect('database.sqlite3') # for running on localhost
+conn = sqlite3.connect('/home/StravaActivityMap/mysite/database.sqlite3')
 sql_query = "SELECT * FROM strava_gpx_data"
 df = pd.read_sql_query(sql_query, conn)
 conn.close()
